@@ -10,7 +10,6 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  // This is important for Netlify deployments
   trailingSlash: true,
 }
 

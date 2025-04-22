@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Setthasto - Social Links</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #000000, #1a1a1a);
+      color: white;
+      min-height: 100vh;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+    }
+    
+    .container {
+      max-width: 500px;
+      width: 100%;
+    }
+    
+    h1 {
+      font-size: 3rem;
+      background: linear-gradient(to right, #d8b4fe, #ec4899);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      margin-bottom: 10px;
+    }
+    
+    .profile {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 4px solid #a855f7;
+      margin: 20px auto;
+      overflow: hidden;
+    }
+    
+    .profile img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin: 30px 0;
+    }
+    
+    .link {
+      display: flex;
+      align-items: center;
+      padding: 15px;
+      border-radius: 10px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    
+    .link:hover {
+      transform: scale(1.03);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
+    
+    .instagram {
+      background: linear-gradient(to right, #a855f7, #ec4899);
+    }
+    
+    .tiktok {
+      background: linear-gradient(to right, #3b82f6, #2dd4bf);
+    }
+    
+    .discord {
+      background: linear-gradient(to right, #6366f1, #a855f7);
+    }
+    
+    .icon {
+      margin-right: 15px;
+      width: 24px;
+      height: 24px;
+    }
+    
+    .username {
+      margin-left: auto;
+      opacity: 0.8;
+    }
+    
+    .about {
+      margin-top: 30px;
+    }
+    
+    .footer {
+      margin-top: 40px;
+      font-size: 0.8rem;
+      opacity: 0.6;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>SETTHASTO</h1>
+    
+    <div class="profile">
+      <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/photo_2025-04-22_02-51-26.jpg-7K8YFOvKSNMToPWxUcDeTsJMqxGFUk.jpeg" alt="Setthasto">
+    </div>
+    
+    <div class="links">
+      <a href="https://www.instagram.com/setthasto/" class="link instagram" target="_blank" rel="noopener noreferrer">
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+          <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+        </svg>
+        <span>Instagram</span>
+        <span class="username">@setthasto</span>
+      </a>
+      
+      <a href="https://www.tiktok.com/@setthasto" class="link tiktok" target="_blank" rel="noopener noreferrer">
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M16.6 5.82s.51.5 0 0A4.278 4.278 0 0 1 15.54 3h-3.09v12.4a2.592 2.592 0 0 1-2.59 2.5c-1.42 0-2.59-1.16-2.59-2.5 0-1.34 1.16-2.5 2.59-2.5.27 0 .54.04.79.13v-3.13c-.26-.03-.54-.04-.79-.04-3.09 0-5.59 2.57-5.59 5.74 0 3.17 2.5 5.74 5.59 5.74 3.09 0 5.59-2.57 5.59-5.74V7.54c.86.66 1.93 1.05 3.09 1.05V5.5c-.86.01-1.55-.39-2-1.05z"></path>
+        </svg>
+        <span>TikTok</span>
+        <span class="username">@setthasto</span>
+      </a>
+      
+      <a href="#" class="link discord" onclick="event.preventDefault(); navigator.clipboard.writeText('setthasto'); alert('Discord username copied to clipboard!');">
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M20.317 4.492c-1.53-.69-3.17-1.2-4.885-1.49a.075.075 0 0 0-.079.036c-.21.39-.444.885-.608 1.286a18.566 18.566 0 0 0-5.487 0 12.217 12.217 0 0 0-.617-1.287.077.077 0 0 0-.079-.036c-1.714.29-3.354.8-4.885 1.491a.07.07 0 0 0-.032.027C.533 9.093-.32 13.555.099 17.961a.08.08 0 0 0 .031.055 20.03 20.03 0 0 0 5.993 2.98.078.078 0 0 0 .084-.026c.462-.62.874-1.275 1.226-1.963.021-.04.001-.088-.041-.104a13.202 13.202 0 0 1-1.872-.878.075.075 0 0 1-.008-.125c.126-.093.252-.19.372-.287a.075.075 0 0 1 .078-.01c3.927 1.764 8.18 1.764 12.061 0a.075.075 0 0 1 .079.009c.12.098.245.195.372.288a.075.075 0 0 1-.006.125c-.598.344-1.22.635-1.873.877a.075.075 0 0 0-.041.105c.36.687.772 1.341 1.225 1.962a.077.077 0 0 0 .084.028 19.963 19.963 0 0 0 6.002-2.981.076.076 0 0 0 .032-.054c.5-5.094-.838-9.52-3.549-13.442a.06.06 0 0 0-.031-.028zM8.02 15.278c-1.182 0-2.157-1.069-2.157-2.38 0-1.312.956-2.38 2.157-2.38 1.21 0 2.176 1.077 2.157 2.38 0 1.312-.956 2.38-2.157 2.38zm7.975 0c-1.183 0-2.157-1.069-2.157-2.38 0-1.312.955-2.38 2.157-2.38 1.21 0 2.176 1.077 2.157 2.38 0 1.312-.946 2.38-2.157 2.38z"></path>
+        </svg>
+        <span>Discord</span>
+        <span class="username">setthasto</span>
+      </a>
+    </div>
+    
+    <div class="about">
+      <h2 style="color: #d8b4fe;">About Me</h2>
+      <p>got bored had to make a site for my self</p>
+    </div>
+    
+    <div class="footer">
+      <p>© <script>document.write(new Date().getFullYear())</script> Setthasto. All rights reserved.</p>
+    </div>
+  </div>
+</body>
+</html>
