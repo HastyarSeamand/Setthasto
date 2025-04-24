@@ -125,7 +125,7 @@ export default function Home() {
           className="mt-20 text-center scroll-animate"
         >
           <h2 className="text-2xl font-bold mb-4 text-purple-300">About Me</h2>
-          <p className="text-gray-300">got bored had to make a site for my self</p>
+          <p className="text-gray-300">got bored had to make site about myself</p>
         </motion.div>
 
         {/* Footer */}
