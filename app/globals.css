@@ -23,3 +23,16 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* Mobile optimization */
+@media (max-width: 640px) {
+  h1.text-5xl {
+    letter-spacing: -0.025em;
+    line-height: 1.1;
+  }
+}
+
+/* Ensure text stays centered */
+.container {
+  overflow-x: hidden;
+}

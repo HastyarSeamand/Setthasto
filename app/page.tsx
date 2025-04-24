@@ -6,7 +6,6 @@ import Link from "next/link"
 import { useEffect } from "react"
 import { TikTokIcon } from "@/components/tiktok-icon"
 import { DiscordIcon } from "@/components/discord-icon"
-import Image from "next/image"
 
 export default function Home() {
   // Animation variants
@@ -55,7 +54,7 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-gradient-to-b from-gray-900 to-black text-white">
-      <div className="container max-w-3xl mx-auto px-4 py-20">
+      <div className="container max-w-3xl mx-auto px-4 sm:px-6 py-16 sm:py-20">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: -50 }}
@@ -63,18 +62,12 @@ export default function Home() {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h1 className="text-6xl md:text-8xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">
+          <h1 className="text-5xl sm:text-6xl md:text-8xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600 mx-auto px-2 w-full text-center break-words">
             SETTHASTO
           </h1>
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5 }} className="mt-6">
             <div className="w-24 h-24 md:w-32 md:h-32 rounded-full mx-auto overflow-hidden border-4 border-purple-500">
-              <Image
-                src="/images/profile.jpg"
-                alt="Setthasto"
-                width={128}
-                height={128}
-                className="w-full h-full object-cover"
-              />
+              <img src="/images/profile.jpg" alt="Setthasto" className="w-full h-full object-cover" />
             </div>
           </motion.div>
         </motion.div>
